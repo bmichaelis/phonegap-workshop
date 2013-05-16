@@ -49,14 +49,14 @@ var EmployeeView = function(employee) {
 	        return;
 	    }
 	    var options =   {   quality: 50,
-	                        destinationType: Camera.DestinationType.DATA_URL,
+	                        destinationType: Camera.DestinationType.FILE_URL,
 	                        sourceType: 1,      // 0:Photo Library, 1=Camera, 2=Saved Photo Album
 	                        encodingType: 0     // 0=JPG 1=PNG
 	                    };
 	 
 	    navigator.camera.getPicture(
-	        function(imageData) {
-	            $('.employee-image', this.el).attr('src', "data:image/jpeg;base64," + imageData);
+	        function(imageURI) {
+	            $('.employee-image', this.el).attr('src', imageURI);
 	        },
 	        function() {
 	            app.showAlert('Error taking picture', 'Error');
