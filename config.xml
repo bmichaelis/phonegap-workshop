@@ -12,7 +12,7 @@
     </description>
  
     <author href="http://brettmichaelis.com" email="brett.michaelis@gmail.com">
-        Bret Michaelis
+        Brett Michaelis
     </author>
  
     <feature name="http://api.phonegap.com/1.0/camera"/>
@@ -23,4 +23,9 @@
     <feature name="http://api.phonegap.com/1.0/network"/>
     <feature name="http://api.phonegap.com/1.0/notification"/>
  
+    <icon src="img/icon/ios/icon-57.png" gap:platform="ios" width="57" height="57" />
+    <icon src="img/icon/ios/icon-72.png" gap:platform="ios" width="72" height="72" />
+    <icon src="img/icon/ios/icon-57-2x.png" gap:platform="ios" width="114" height="114" />
+    <icon src="img/icon/ios/icon-72-2x.png" gap:platform="ios" width="144" height="144" />
+
 </widget>
